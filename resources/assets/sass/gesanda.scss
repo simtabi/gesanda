@@ -1,0 +1,33 @@
+@import 'input-effects';
+
+$color : #e8e8e8;
+$glow  : #0085ff;
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input,
+.form-control,
+.form-select
+{
+    border: 0.16rem solid rgba($color, .85);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &:focus {
+        border-color: $glow;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba($glow, 0.25) !important;
+    }
+}
