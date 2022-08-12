@@ -1,5 +1,7 @@
 @props([
     'autoCloseTime',
+    'messageHeadingCss' => 'text-gray-800',
+    'messageCss'        => 'text-gray-700',
     'message',
 ])
 
@@ -31,10 +33,10 @@
         <div class="d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap">
             <div class="mb-3 mb-md-0 fw-bold">
                 @if(!empty($heading))
-                    <h4 class="text-gray-800 fw-bolder">{!! $heading !!}</h4>
+                    <h4 class="{{$messageHeadingCss}}fw-bolder">{!! $heading !!}</h4>
                 @endif
                 @if(!empty($message))
-                    <div class="{!! $messageCss ?? '' !!} text-gray-700">{!! $message !!}</div>
+                    <div class="{!! $messageCss !!}">{!! $message !!}</div>
                 @endif
             </div>
             @if(!empty($cta)) {!! $cta !!} @endif
@@ -42,10 +44,10 @@
     @else
         <div class="d-flex flex-column">
             @if(!empty($heading))
-                <h4 class="mb-1 text-{{$alertColor}}">{!! $heading !!}</h4>
+                <h4 class="mb-1 {{$messageHeadingCss}}">{!! $heading !!}</h4>
             @endif
             @if(!empty($message))
-                <span class="{!! $messageCss ?? '' !!}">{!! $message !!}</span>
+                <span class="{!! $messageCss !!}">{!! $message !!}</span>
             @endif
         </div>
     @endif
