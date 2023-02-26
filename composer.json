@@ -29,13 +29,13 @@
         "illuminate/contracts": "^9.0|^10"
     },
     "require-dev": {
-        "brianium/paratest": "=>v6.9.0",
+        "brianium/paratest": ">=v6.9.0",
         "nunomaduro/collision": ">=v6.4.0",
         "nunomaduro/larastan": ">=2.4.1",
         "orchestra/testbench": ">=v7.22.1",
-        "phpmd/phpmd": "^2.11",
-        "phpstan/phpstan-mockery": "^1.0",
-        "squizlabs/php_codesniffer": "^3.6"
+        "phpmd/phpmd": ">=2.11",
+        "phpstan/phpstan-mockery": ">=1.0",
+        "squizlabs/php_codesniffer": ">=3.6"
     },
     "autoload": {
         "psr-4": {
