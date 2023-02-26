@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": "^8.0|^8.1|^8.2",
-        "illuminate/contracts": "^^9.0|^10"
+        "illuminate/contracts": "^9.0|^10"
     },
     "require-dev": {
         "brianium/paratest": "=>v6.9.0",
